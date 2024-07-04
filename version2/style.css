@@ -1,0 +1,90 @@
+/* 기본 스타일 */
+body { /*전체 웹페이지의 기본 스타일을 설정*/
+    font-family: Arial, sans-serif; /*폰트*/
+    background-color: #f0f0f0; /*배경색*/
+    margin: 0; /*마진*/
+    padding: 0; /*패딩*/
+    display: flex; /*중앙정렬*/
+    flex-direction: column; /*중앙정렬*/
+    align-items: center; /*중앙정렬*/
+}
+
+header { /*헤더 섹션 스타일을 설정*/
+    background-color: #4CAF50; /*배경색*/
+    color: white; /*글자색상*/
+    padding: 20px; /*패딩*/
+    width: 100%;
+    text-align: center; /*텍스트 정렬*/
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /*그림자*/
+}
+
+main { /*주요 콘텐츠 섹션의 스타일을 설정*/
+    width: 100%; /*최대 너비, 마진, 패딩, 배경색, 테두리 반경 및 그림자를 설정합니다*/
+    max-width: 600px;
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.input-section { /*할 일 입력 폼의 스타일을 설정*/
+    display: flex; /*입력 필드와 버튼을 가로로 정렬합니다.*/
+    margin-bottom: 20px;
+}
+
+#todo-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+#add-todo {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#add-todo:hover {
+    background-color: #45a049;
+}
+
+.todo-list-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.todo-list-section li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.todo-list-section li:last-child {
+    border-bottom: none;
+}
+
+.todo-list-section li.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.todo-list-section li button {
+    margin-left: auto;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.todo-list-section li button:hover {
+    background-color: #e53935;
+}

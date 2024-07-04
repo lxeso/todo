@@ -1,0 +1,24 @@
+<!DOCTYPE html> <!--HTML5 문서임을 선언-->
+<html lang="en"> <!--문서 영어를 영어로 설정-->
+<head> <!--메타데이터를 포함(문자인코딩, 뷰포트 설정, 제목 및 CSS 파일)-->
+    <meta charset="UTF-8"> <!--문자인코딩-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--뷰포트 설정-->
+    <title>Todo List</title> <!--제목-->
+    <link rel="stylesheet" href="style.css"> <!--CSS파일 설정-->
+</head>
+<body> <!--웹페이지 본문-->
+    <header> <!--제목을 포함하는 헤더 섹션-->
+        <h1>My Todo List</h1>
+    </header>
+    <main>
+        <section class="input-section"> <!--할 일 항목 입력하고 추가하는 입력 필드와 버튼을 포함-->
+            <input type="text" id="todo-input" placeholder="Enter a new todo">
+            <button id="add-todo">Add</button>
+        </section>
+        <section class="todo-list-section"> <!--할 일 목록을 표시하는 섹션-->
+            <ul id="todo-list"></ul>
+        </section>
+    </main>
+    <script src="script.js"></script> <!--자바스크립트 파일 설정-->
+</body>
+</html>
